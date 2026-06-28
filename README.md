@@ -4,6 +4,22 @@ AI-powered ACT tutor built for Claude Code. Generates original questions, gives 
 
 ---
 
+## Why use this instead of a prep book or tutoring app?
+
+**It adapts to you in real time.** Most prep resources give everyone the same questions in the same order. This agent tracks every miss, identifies your patterns, and steers questions toward your specific weak spots. If you keep missing punctuation questions, you get more punctuation questions — not another passage on a topic you already know.
+
+**You always know your score trajectory.** After every session you see an estimated score for that section, your weekly average, and a projection to test day — not just a raw count of right/wrong. Official practice tests feed into the same tracker so drill estimates and real test scores stay in one picture.
+
+**Feedback explains the *why*, not just the answer.** Every answer — right or wrong — shows the rule, the deliberate ACT trap, and why the other choices fail. You learn the pattern, not just that answer choice B was correct this time.
+
+**Pacing is enforced, not optional.** You log your time with every answer (`B — 31 sec`). The agent calls out pacing drift before it becomes a test-day problem — the ACT is as much a speed test as a knowledge test.
+
+**Parents can check in without interrupting.** Type `Parent digest` to get a plain-English weekly summary — estimated scores with trend arrows, on-track verdict, top weaknesses, and next week's focus — without having to sit through a session.
+
+**It works for any student, any timeline.** First-time setup takes 2 minutes. The agent builds a week-by-week plan from your baseline scores, target, and days until the test. Everything personal stays in a gitignored file on your machine.
+
+---
+
 ## Quick Start
 
 ### 1. Clone
