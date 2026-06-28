@@ -116,6 +116,157 @@ See [`claude/tests/README.md`](claude/tests/README.md) for section timing, scori
 
 ---
 
+## Sample Session
+
+Here's what a live English drill looks like — question, student answer, and the feedback that follows.
+
+**The agent asks:**
+
+> Which of the following corrects the underlined portion of the sentence?
+>
+> *After climbing for three hours, **the summit came into view.***
+>
+> A) the summit came into view
+> B) the view of the summit became clear
+> C) the climbers finally saw the summit
+> D) the summit was finally visible
+
+**Student:** `A — 45 sec`
+
+**Agent responds:**
+
+```
+WRONG — You chose A. Answer: C.
+
+RULE: A participial phrase ("After climbing for three hours") must modify the
+subject of the main clause. In choice A, the subject is "the summit" — summits
+don't climb. The phrase needs to modify the climbers, so the main clause must
+start with them.
+
+TRAP: Choice A sounds natural spoken aloud, which is exactly why the ACT uses
+it. Your ear doesn't flag it because conversational English is looser than
+written English. ACT English tests written correctness, not spoken comfort.
+
+LOG: English | Modifier Placement | MISS | Priority: High
+Score: 2/4 (50%) · English · Grammar: 0/2 · Rhetoric: 2/2 · Level: Medium →
+Est. score this session: ~26–27 (low confidence)  |  Running week avg: ~29
+```
+
+Since the answer was wrong, the agent immediately serves one follow-up question of the same type (dangling modifier) before continuing to Q5.
+
+---
+
+## Reports
+
+### Session Report
+
+Auto-generated at the end of every session — no command needed.
+
+```
+═══════════════════════════════════════════
+SESSION REPORT — ENGLISH · Jun 28
+═══════════════════════════════════════════
+
+SCORE: 18/25 (72%)
+Duration: 38 min / 45 min target
+Difficulty reached: Hard
+
+ESTIMATED SCORE (this session):
+  Accuracy 72% → Est. English score: ~28–29
+  Running week average: ~30  (based on 3 sessions this week)
+
+BREAKDOWN BY TYPE:
+  Punctuation:        8/10  (80%)  — Strong
+  Modifier Placement: 2/5   (40%)  — Needs work  ← target next session
+  Transitions:        5/6   (83%)  — Strong
+  Verb Agreement:     3/4   (75%)  — OK
+
+TRAPS HIT: 14 of 25 questions had a trap — fell for 7
+  Most common trap: "sounds correct when read aloud" (dangling modifiers)
+
+MISSES THIS SESSION:
+  Q4  | Modifier Placement | Dangling participial phrase   | Priority: High
+  Q9  | Modifier Placement | Misplaced "only"              | Priority: High
+  Q13 | Verb Agreement     | Collective noun, singular     | Priority: Med
+
+ERROR LOG UPDATE:  ← copy these lines into error-log.md
+  Jun 28 | English | Modifier Placement | Dangling participial phrase | High
+  Jun 28 | English | Modifier Placement | Misplaced "only"            | High
+  Jun 28 | English | Verb Agreement     | Collective noun, singular   | Med
+
+DAILY PROGRESS:
+  English: 38 min ✓
+  Reading: not yet
+  Science: not yet
+  Math:    not yet
+
+FOCUS FOR NEXT ENGLISH SESSION:
+  Priority drill: Modifier Placement (2/5 — biggest gap today)
+  Skip: Transitions (5/6 — already strong, no need to over-drill)
+
+═══════════════════════════════════════════
+```
+
+### Parent Digest
+
+Type `Parent digest` at any time for a plain-English summary of the week.
+
+```
+══════════════════════════════════════════════════
+WEEKLY PARENT DIGEST — Week of Jun 23
+Alex · Target: 34 composite · Test: Oct 25, 2026
+══════════════════════════════════════════════════
+
+STUDY ACTIVITY THIS WEEK
+  Days studied:    5 / 7
+  Total time:      4 hr 20 min
+  Sessions done:   English ×3 · Reading ×2 · Science ×2 · Math ×2
+  Missed days:     Mon, Fri  ← no multi-day streak, OK
+
+ESTIMATED SCORES  (from drill accuracy this week)
+  English:   ~30   ↑ +2 vs last week
+  Math:      ~32   →  flat
+  Reading:   ~29   ↑ +1 vs last week
+  Science:   ~28   ↓ -1 vs last week
+  ──────────────────────────────────────────────
+  Composite est.:  ~30   (English + Math + Reading average)
+  Confidence: Medium — 2–3 sessions per section this week
+
+OFFICIAL TEST SCORES
+  Bi-weekly #1 · Jun 14 → E:28 · M:31 · R:27 · S:29 · Composite: 29
+
+ON TRACK FOR TARGET?
+  Target:    34 composite by Oct 25
+  Current:   ~30 composite (drill estimate)
+  Gap:       4 points · 17 weeks to test
+  Trajectory: ON TRACK — needs +0.24 pts/week at current pace
+  Projected score on test day: ~32–34
+
+STRENGTHS THIS WEEK
+  Best section:     Math — 82% accuracy, est. 32
+  Most improved:    English — up 3% from last week
+  Highest difficulty reached: Hard (English)
+
+AREAS NEEDING ATTENTION
+  #1: English — Modifier Placement · 42% accuracy · 7 misses
+      → What it means: Sentences where a describing phrase attaches to the wrong
+         word. Easy to fix — 15-min focused drill will close this gap.
+  #2: Reading — Inference questions · 55% accuracy · 5 misses
+      → What it means: Questions asking what the author implies vs. states.
+         Needs to slow down and return to the passage before answering.
+  #3: Science — Data Interpretation · 60% accuracy
+      → What it means: Reading graphs and tables accurately under time pressure.
+
+RECOMMENDED FOCUS NEXT WEEK
+  1. Add one extra English session targeting modifier placement
+  2. Reading: 20 seconds back in the passage before answering inference questions
+  Next practice test: Bi-weekly #2 due — schedule for this weekend
+
+══════════════════════════════════════════════════
+```
+
+---
+
 ## File Reference
 
 | File | Purpose |
