@@ -1,0 +1,7 @@
+{
+  "name": "example-skill",
+  "version": "0.0.1",
+  "description": "A simple example Claude skill that echoes input and demonstrates structure.",
+  "entrypoint": "code/index.js",
+  "triggers": ["echo", "demo"]
+}

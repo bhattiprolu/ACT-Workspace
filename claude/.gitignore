@@ -1,0 +1,15 @@
+node_modules/
+.env
+student-config.md
+score-tracker.md
+error-log.md
+tests/results/*.md
+
+# Official ACT PDFs — copyrighted, not for public repos
+# Store locally in sample-tests/ but never commit
+sample-tests/*.pdf
+sample-tests/**/*.pdf
+*.pdf
+
+# macOS metadata
+.DS_Store
